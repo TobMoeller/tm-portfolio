@@ -1,0 +1,141 @@
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  padding: 10px 20%;
+  background-color: var(--third-bg-color);
+  box-shadow: 0px 2px 8px var(--third-sha-color);
+  z-index: 9999;
+  transition: all ease 0.5s;
+}
+
+header a {
+  text-decoration: none;
+  margin-right: auto;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+header h1 {
+  cursor: pointer;
+  margin: 0;
+  color: var(--third-obj-color);
+  transition: all ease 0.5s;
+}
+
+header h1:hover {
+  color: var(--third-hov-color);
+}
+
+.main-nav {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 0px 1rem;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .main-nav li {
+    padding: 0px 0.5rem;
+  }
+  header {
+    padding: 10px 10%;
+  }
+}
+.main-nav li a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: var(--third-obj-color);
+}
+.main-nav li a:hover {
+  color: var(--third-hov-color);
+}
+
+.theme-selector button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 32px;
+  margin: 5px 0 5px 0;
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
+}
+
+.theme-selector button:first-child {
+  margin-right: 1rem;
+}
+.theme-selector button:hover {
+  opacity: 1;
+}
+
+/* burger nav for mobile */
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 32px;
+  height: 3px;
+  background-color: var(--third-obj-color);
+  transition: all ease 0.5s;
+}
+.close2 {
+  margin: 6px 0 6px 0;
+}
+.open1 {
+  transform: rotate(-45deg) translateY(4px);
+}
+.open2 {
+  opacity: 0;
+  margin: 0;
+}
+.open3 {
+  transform: rotate(45deg) translateY(-4px);
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    background-color: var(--third-bg-color);
+    box-shadow: 0px 5px 2px var(--third-sha-color);
+    transform: translateX(100%);
+    transition: all ease 0.5s;
+  }
+  .main-nav li {
+    margin: 1rem 10%;
+    border-bottom: solid 2px var(--third-obj-color);
+    text-align: end;
+    padding: 0;
+  }
+  .burger {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+.open {
+  transform: translateY(0%);
+}

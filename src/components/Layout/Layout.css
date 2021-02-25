@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-decoration: none; */
+  /* list-style-type: none; */
+  max-width: 100%;
+  color: var(--main-obj-color);
+  scroll-behavior: smooth;
+}
+
+main {
+  /* margin: 0 20% 0 20%; */
+  /* max-width: 1600px; */
+  /* padding-top: 2em; */
+  /* min-height: calc(100vh - 4em); */
+  align-items: center;
+  background-color: var(--second-bg-color);
+  padding-bottom: 2em;
+}
+
+.darktheme {
+  --main-bg-color: rgba(50, 50, 50, 1); /* sections / content */
+  --main-obj-color: rgba(255, 255, 255, 0.7);
+  --main-header-color: rgba(255, 255, 255, 0.85);
+  /* --main-hov-color: rgba(238, 239, 243, 1); */
+  --main-sha-color: rgba(0, 0, 0, 0.7);
+  --second-bg-color: rgba(84, 84, 84, 1); /* main / projects */
+  --second-obj-color: rgba(84, 84, 84, 1);
+  --second-hov-color: rgba(255, 255, 255, 0.7);
+  --second-sha-color: rgba(0, 0, 0, 0.7);
+  --third-bg-color: rgba(0, 0, 0, 0.8); /* header / footer */
+  --third-obj-color: rgba(238, 239, 243, 0.8);
+  --third-hov-color: rgba(255, 255, 255, 1);
+  --third-sha-color: rgba(77, 77, 77, 0.7);
+  --main-link-color: rgba(41, 151, 255, 1);
+}
+
+.lighttheme {
+  --main-bg-color: rgba(245, 245, 247, 1);
+  --main-obj-color: rgba(29, 29, 31, 0.7);
+  --main-header-color: rgba(29, 29, 31, 0.85);
+  /* --main-hov-color: hsla(0, 0%, 100%, 0.7); */
+  --main-sha-color: rgba(0, 0, 0, 0.7);
+  --second-bg-color: rgba(255, 255, 255, 1);
+  --second-obj-color: rgba(29, 29, 31, 0.4);
+  --second-hov-color: rgba(29, 29, 31, 0.7);
+  --second-sha-color: rgba(77, 77, 77, 0.7);
+  --third-bg-color: rgba(0, 0, 0, 0.8);
+  --third-obj-color: rgba(238, 239, 243, 0.8);
+  --third-hov-color: rgba(255, 255, 255, 1);
+  --third-sha-color: rgba(77, 77, 77, 0.7);
+  --main-link-color: rgba(41, 151, 255, 1);
+}

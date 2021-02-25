@@ -1,0 +1,131 @@
+.projects-wrapper {
+  position: relative;
+  /* height: 400px; */
+}
+
+.project {
+  background-color: var(--second-bg-color);
+  /* box-sizing: content-box; */
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0px 0px 3px var(--second-sha-color);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -24px;
+  padding: 22px 8px;
+  background-color: var(--main-bg-color);
+  color: var(--second-obj-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border: none;
+  outline: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--second-hov-color);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  /* background-color: #bbb; */
+  background-color: var(--second-obj-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+.active,
+.dot:hover {
+  /* background-color: #717171; */
+  background-color: var(--second-hov-color);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* .project .gatsby-image-wrapper {
+  box-shadow: 0px 2px 8px var(--main-sha-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 1rem;
+} */
+
+.project .project-link {
+  margin-bottom: 1rem;
+}
+
+.project-link a .gatsby-image-wrapper {
+  box-shadow: 0px 2px 8px var(--main-sha-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.project > * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.project h2 {
+  margin-top: 0.56rem;
+}
+
+.project ul {
+  margin-left: 2.56rem;
+}
+
+@media screen and (max-width: 768px) {
+  #projects .content {
+    margin: 0 calc(10vw - 2rem);
+  }
+  #projects .content h1,
+  #projects .content p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}

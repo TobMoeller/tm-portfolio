@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: var(--third-bg-color);
+  box-shadow: 0px 2px 10px var(--third-sha-color) inset;
+}
+
+/* Alternate Footer 
+footer {
+  margin-left: 20%;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: var(--main-bg-color);
+  box-shadow: 0px 2px 10px grey inset;
+} */
+
+footer h4,
+footer h5,
+footer p {
+  color: var(--third-obj-color);
+}
