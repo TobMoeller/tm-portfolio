@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const personal = false;
+const personal = true;
 
 module.exports = {
   siteMetadata: {
