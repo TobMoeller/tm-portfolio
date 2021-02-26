@@ -26,9 +26,6 @@ export default function SkillList({ skills, skillCaptions, iconWidth = 64 }) {
     `
   );
   const { edges } = data.allFile;
-  console.log(data);
-  // console.log(skills.indexOf("xing"));
-  // console.log(skills[1]); style in div: grid with repeat with skills.length
   return (
     <div className="skill-list">
       {skills !== undefined && edges !== undefined ? (

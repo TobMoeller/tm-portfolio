@@ -61,18 +61,7 @@ export default function Projects() {
   };
   return (
     <div className="projects-wrapper">
-      {/* {projects.map(({ node: project }, index) => (
-        <div className="project  fade" key={`project${index}`}>
-          <div className={project.slug + " " + index}>
-            <MDXRenderer>{project.body}</MDXRenderer>
-          </div>
-        </div>
-      ))} */}
       <div className="project">
-        {/* <ProjectImage
-          currentProject={currentProject}
-          projectTitle={projects[currentProject].node.frontmatter.title}
-        /> */}
         <MDXRenderer
           currentProject={currentProject}
           projectWebsite={projects[currentProject].node.frontmatter.projectWebsite}

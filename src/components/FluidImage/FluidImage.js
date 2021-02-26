@@ -29,19 +29,14 @@ export default function FluidImage({ imageName, imageClass, imageAlt, imageStyle
   );
 
   const { edges } = data.allFile;
-  console.log(data);
   edges.filter(({ node }) => node.relativePath === imageName);
-  console.log(edges);
   return (
-      <div className={imageClass} style={imageStyle}>
-          {edges[0] !== undefined ? (
-            <Img
-              fluid={edges[0].node.childImageSharp.fluid}
-              alt={imageAlt}
-            />
-          ) : (
-            <p style={{ fontStyle: "italic" }}>Project thumbnail not available</p>
-          )}
-      </div>
+    <div className={imageClass} style={imageStyle}>
+      {edges[0] !== undefined ? (
+        <Img fluid={edges[0].node.childImageSharp.fluid} alt={imageAlt} />
+      ) : (
+        <p style={{ fontStyle: "italic" }}>Project thumbnail not available</p>
+      )}
+    </div>
   );
 }
