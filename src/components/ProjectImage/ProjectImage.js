@@ -28,8 +28,6 @@ export default function ProjectImage({ currentProject, projectTitle, projectWebs
   );
 
   const { edges } = data.allFile;
-  console.log(data);
-  console.log(projectWebsite);
   return (
     <React.Fragment>
       <div className="project-link">
