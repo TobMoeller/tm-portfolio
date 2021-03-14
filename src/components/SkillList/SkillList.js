@@ -3,6 +3,12 @@ import React from "react";
 import "./SkillList.css";
 
 export default function SkillList({ skills, skillCaptions, iconWidth = 64 }) {
+  let listStyle = {
+    display: "grid",
+    gridTemplateColumns: `repeat(auto-fill, ${iconWidth * 1.5}px)`,
+    // gap: "2rem",
+    justifyContent: "space-between",
+  };
   const data = useStaticQuery(
     graphql`
       query {
@@ -27,7 +33,7 @@ export default function SkillList({ skills, skillCaptions, iconWidth = 64 }) {
   );
   const { edges } = data.allFile;
   return (
-    <div className="skill-list">
+    <div className="skill-list" style={listStyle}>
       {skills !== undefined && edges !== undefined ? (
         edges
           .filter(({ node }) => skills.includes(node.name))

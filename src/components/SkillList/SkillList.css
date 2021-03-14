@@ -27,11 +27,21 @@
   margin: 2rem;
 } */
 
-.skill-list {
+/* .skill-list {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
   flex-wrap: wrap;
+} */
+
+/* .skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 7.5rem);
+  justify-content: space-between;
+} */
+
+.skill-list {
+  gap: 2rem;
 }
 
 @media screen and (max-width: 768px) {
