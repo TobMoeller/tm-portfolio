@@ -16,7 +16,7 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: calc(40vw / 1.3);
   width: auto;
   margin-top: -24px;
   padding: 22px 8px;
@@ -31,13 +31,28 @@
   outline: none;
 }
 
+/* Height of "next button" depending on screen size */
+@media screen and (max-width: 1024px) {
+  .prev,
+  .next {
+    top: calc(60vw / 1.3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev,
+  .next {
+    top: calc(80vw / 1.3);
+  }
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, change background color */
 .prev:hover,
 .next:hover {
   background-color: var(--second-hov-color);
