@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-const LanguageContext = React.createContext("en");
+const LanguageContext = React.createContext("de");
 const LanguageUpdateContext = React.createContext();
 const ThemeContext = React.createContext("darktheme");
 const ThemeUpdateContext = React.createContext();
@@ -22,7 +22,7 @@ export function useThemeUpdate() {
 }
 
 export function ContextProvider({ children }) {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("de");
   const [theme, setTheme] = useState("darktheme");
   const switchTheme = () => {
     setTheme(theme === "darktheme" ? "lighttheme" : "darktheme");

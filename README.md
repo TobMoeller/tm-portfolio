@@ -4,7 +4,7 @@ Created with [Gatsby](https://www.gatsbyjs.org)
 
 ## Features
 
-- One Page Layout with
+- one page layout with
 - programmatically created sections from .mdx files
 - extensible
 - color theme
@@ -72,7 +72,7 @@ Short Description how it all plays together
 ## gatsby-config.js
 
 In the `gatsby-config.js` file you can set some meta information for your site which gets used by a `<SEO />` component and con be individually changed for each page.
-The _personal_ variable enables working on this project as a blank template and have personal information in seperate folders (they also get ignored by git): _false_ uses `images, projects, sections`, _true_ uses `pers_images, pers_projects, pers_sections`.
+The _personal_ variable enables working on this project as a blank template and having personal information in seperate folders (they also get ignored by git): _false_ uses `images, projects, sections`, _true_ uses `pers_images, pers_projects, pers_sections`.
 
 ```javascript
 const personal = false;
@@ -93,7 +93,7 @@ module.exports = {
 
 You can add additional pages to the `pages`folder, but there is no automated navigation for it and the project is build with a one page layout in mind.
 
-This however is the place where you can change pagespecific Metainformation by adding some of the following possible props to the `<SEO />` component: _title, description, image, article_.
+This however is the place where you can change pagespecific metainformation by adding some of the following possible props to the `<SEO />` component: _title, description, image, article_.
 
 ## Sections
 
@@ -135,7 +135,7 @@ The components `<SkillList />` and `<Projects />` are there to add additional fu
 
 The `<SkillList />` component automatically generates a list of icons inside a section. The icons have to be inside the `src/images/icons` folder.
 
-It expects an Array of filenames inside the _skills_-property. Additionally you can add an Array of Captions (property: _skillCaptions_) for each icon (has to be the same order) and an _iconWidth_ to determine its size.
+It expects an array of filenames inside the _skills_-property. Additionally you can add an array of captions (property: _skillCaptions_) for each icon (has to be the same order) and an _iconWidth_ to determine its size.
 
 Here is an example of how to use it inside a section markdown file:
 
